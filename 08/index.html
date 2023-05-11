@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1>Questão 8</h1>
+        <p>8. Escreva uma função que informe o retorno de um investimento (montante) com base nos valores do capital
+            inicial, tempo em meses e taxa de juros mensal, fornecidos pelo usuário.
+            <br>
+            Use a fórmula: <strong>M = C * (1+i)<sup>t</sup></strong>
+            <br>
+            Onde:
+        </p>
+        <ul>
+            <li>C = Capital inicial investido</li>
+            <li>i = Taxa de juros, em percentual</li>
+            <li>t = Tempo do investimento, em meses</li>
+        </ul>
+        <p>Exiba o resultado com duas casas decimais.</p>
+    </header>
+    <hr>
+    <div id="funcao">
+        <section id="section1">
+            <label for="capital">Digite o capital inicial investido:</label>
+            <input type="number" name="capital" id="capital" min="0" placeholder="0,00" oninput="limitDecimalPlaces(event)">
+            <label for="juros">Digite a taxa de juros (em percentual):</label>
+            <input type="number" name="juros" id="juros" min="0" placeholder="0,00" oninput="limitDecimalPlaces(event)">
+            <label for="meses">Digite o tempo de investimento (em meses):</label>
+            <input type="number" name="meses" id="meses" min="0" placeholder="0">
+            <input type="button" name="botao" id="botao" value="Calcular" onclick="calcular()">
+        </section>
+    </div>
+    <hr>
+    <footer>
+        <p id="rodape">&copy; Laura Cargnelutti Pires</p>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
